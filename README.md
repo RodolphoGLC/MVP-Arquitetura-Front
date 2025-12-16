@@ -110,7 +110,7 @@ Na **raiz do projeto** (onde está o `docker-compose.yml`), execute:
 docker compose up --build
 ```
 
-Quando o primeiro comando terminar de rodar, vc vai rodar o comando abaixo
+Quando o primeiro comando terminar de rodar, vc vai rodar o comando abaixo em um novo terminal
 ⚠️ **Este comando precisará que o back esteja rodando no docker.**  
 
 ```bash
