@@ -91,8 +91,9 @@ Ele depende do back-end e do banco de dados.
 - Docker (baixado e iniciado)
 - Docker Compose
 - Clonar o Front do git: https://github.com/RodolphoGLC/MVP-Arquitetura-Front
+- Clonar o Back do git: https://github.com/RodolphoGLC/MVP-Arquitetura-Back
 - Criar uma pasta em algum lugar no seu computador
-- Você precisa copiar e colar a pasta back na pasta criada, junto aos 2 arquivos do repositório do front a estrutura que deverá ficar está abaixo:
+- Você precisa copiar e colar a pasta back na pasta criada, junto aos 2 arquivos do repositório do front a estrutura que deverá ficar como está abaixo:
 
 ```text
 front/
