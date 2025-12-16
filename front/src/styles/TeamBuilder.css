@@ -1,0 +1,207 @@
+/* Reset básico */
+* {
+  box-sizing: border-box;
+}
+
+.builder-container {
+  margin: 0 auto;
+  padding: 32px 20px 60px;
+  background: #f8fafc;
+  min-height: 100vh;
+  font-family: "Inter", system-ui, sans-serif;
+  color: #020617;
+}
+
+/* 🔴 Header Pokébola */
+.builder-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #dc2626;
+  padding: 24px 28px;
+  margin: -32px -20px 32px;
+  border-bottom: 6px solid #020617;
+}
+
+.builder-header h1 {
+  margin: 0;
+  font-size: 1.6rem;
+  color: #020617;
+}
+
+/* Nome do time + salvar */
+.team-name-row {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+.team-name-input {
+  flex: 1;
+  margin-bottom: 0;
+}
+
+/* Inputs */
+.input {
+  width: 100%;
+  padding: 14px 16px;
+  border-radius: 12px;
+  border: 1px solid #d1d5db;
+  font-size: 1rem;
+  background: #ffffff;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #dc2626;
+  box-shadow: 0 0 0 2px rgba(220, 38, 38, 0.15);
+}
+
+/* Preview */
+.team-preview {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  padding: 20px;
+  margin-bottom: 32px;
+}
+
+.team-preview h3 {
+  margin: 0 0 16px;
+  font-size: 1.1rem;
+}
+
+.team {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.hint {
+  color: #6b7280;
+  font-size: 0.9rem;
+}
+
+/* Grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 18px;
+  margin: 16px 0 40px 0;
+}
+
+/* Pokémon card */
+.pokemon-card {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 14px 10px;
+  text-align: center;
+  cursor: pointer;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.pokemon-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.15);
+}
+
+.pokemon-card img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+}
+
+.pokemon-card span {
+  display: block;
+  font-size: 0.85rem;
+  margin-top: 6px;
+  text-transform: capitalize;
+  color: #020617;
+}
+
+/* Botões */
+.primary-btn {
+  background: #991b1b;
+  color: #ffffff;
+  padding: 14px;
+  border-radius: 14px;
+  border: none;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.primary-btn:hover {
+  background: #7f1d1d;
+}
+
+.primary-btn:disabled {
+  background: #fca5a5;
+  cursor: not-allowed;
+}
+
+.save-btn {
+  width: auto;
+  padding: 14px 24px;
+  white-space: nowrap;
+}
+
+/* Secundário */
+.secondary-btn {
+  background: #020617;
+  color: #ffffff;
+  padding: 10px 16px;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.secondary-btn:hover {
+  background: #1e293b;
+}
+
+.pokemon-card {
+  color: #020617;
+}
+
+/* Tipos */
+.type-fire { background: #fee2e2; }
+.type-water { background: #dbeafe; }
+.type-grass { background: #dcfce7; }
+.type-electric { background: #fef9c3; }
+.type-psychic { background: #fce7f3; }
+.type-ice { background: #e0f2fe; }
+.type-dragon { background: #ede9fe; }
+.type-dark { background: #e5e7eb; }
+.type-fairy { background: #fdf2f8; }
+.type-poison { background: #f3e8ff; }
+.type-ground { background: #fef3c7; }
+.type-rock { background: #f5f5f4; }
+.type-bug { background: #ecfccb; }
+.type-fighting { background: #fee2e2; }
+.type-ghost { background: #ede9fe; }
+.type-steel { background: #f1f5f9; }
+.type-normal { background: #f9fafb; }
+
+/* Mobile */
+@media (max-width: 768px) {
+  .builder-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .team-name-row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .save-btn {
+    width: 100%;
+  }
+}
