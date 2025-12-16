@@ -63,6 +63,7 @@ frontend/
 ├── vite.config.ts
 ├── Dockerfile
 └── README.md
+```
 
 ## 🔗 Integração com o Back-end
 
@@ -97,6 +98,7 @@ Ele depende do back-end e do banco de dados.
 front/
 back/
 docker-compose.yml
+```
 
 ---
 
@@ -106,6 +108,7 @@ Na **raiz do projeto** (onde está o `docker-compose.yml`), execute:
 
 ```bash
 docker compose up --build
+```
 
 Este comando irá:
 
