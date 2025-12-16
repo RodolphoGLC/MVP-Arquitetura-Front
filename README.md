@@ -89,6 +89,14 @@ Ele depende do back-end e do banco de dados.
 
 - Docker
 - Docker Compose
+- Clonar o Front do git: https://github.com/RodolphoGLC/MVP-Arquitetura-Front
+- Criar uma pasta em algum lugar no seu computador
+- Você precisa copiar e colar a pasta back na pasta criada, junto aos 2 arquivos do repositório do front a estrutura que deverá ficar está abaixo:
+
+```text
+front/
+back/
+docker-compose.yml
 
 ---
 
@@ -98,7 +106,6 @@ Na **raiz do projeto** (onde está o `docker-compose.yml`), execute:
 
 ```bash
 docker compose up --build
-```
 
 Este comando irá:
 
